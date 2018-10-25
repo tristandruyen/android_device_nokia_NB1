@@ -52,7 +52,6 @@ TARGET_OTA_ASSERT_DEVICE := Nokia8,nokia8,Nokia_8,nokia_8,NB1,nb1,Nokia_NB1,noki
 
 # Prebuilt
 TARGET_PREBUILT_KERNEL := $(DEVICE_FOLDER)/prebuilt/Image.gz-dtb
-TARGET_PREBUILT_RECOVERY_KERNEL := $(DEVICE_FOLDER)/prebuilt/Image.gz-dtb
 TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/recovery.fstab
 
 # Kernel
@@ -86,6 +85,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # BOARD_PERSISTIMAGE_PARTITION_SIZE := 33554432
 # Workaround for error copying vendor files to recovery ramdisk
 # TARGET_COPY_OUT_VENDOR := system/vendor
+# TARGET_PREBUILT_RECOVERY_KERNEL := $(DEVICE_FOLDER)/prebuilt/Image.gz-dtb
 
 # Boardstuff(both builds)
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
